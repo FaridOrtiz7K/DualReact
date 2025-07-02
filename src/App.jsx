@@ -2,6 +2,7 @@ import React from 'react';
 import Navbar from './components/Navbar';//importar NavBar
 import Footer from './components/Footer';//importar SectionsGrid
 import { SectionsGrid } from './components/SectionCard'; //importar SectionsGrid
+import titleimage from './components/titleImage'
 
 const App = () => {
   // Mueve la declaración de sectionsData fuera del JSX
@@ -52,7 +53,7 @@ const App = () => {
 
       {/* Contenido principal */}
       <main>
-        <h1>HOLAAAA PUTA kfdnkjnsfdkjnksnfknskfdnnfflnjafnjkanfjkn</h1>
+        <titleimage></titleimage>
         <SectionsGrid sections={sectionsData} />
       </main>
 
