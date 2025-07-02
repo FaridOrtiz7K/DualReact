@@ -53,7 +53,6 @@ const App = () => {
 
       {/* Contenido principal */}
       <main>
-        <titleimage></titleimage>
         <SectionsGrid sections={sectionsData} />
       </main>
 
