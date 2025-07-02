@@ -4,6 +4,7 @@ import Footer from './components/Footer';//importar SectionsGrid
 import MapSection from './components/MapSection';//importar MapSection
 import Banner from './components/Banner';//importar Banner
 import { SectionsGrid } from './components/SectionCard'; //importar SectionsGrid
+import titleimage from './components/titleImage'
 
 const App = () => {
   // Mueve la declaración de sectionsData fuera del JSX para que se ejecute en el main 
@@ -66,7 +67,6 @@ const App = () => {
 
       {/* Contenido principal */}
       <main>
-
         <SectionsGrid sections={sectionsData} />
         <div>
           <Banner items={customBanners} />
