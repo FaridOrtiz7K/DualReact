@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import '../../src/assets/css/style.css';
+// import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -11,6 +12,7 @@ const Navbar = () => {
   return (
     <>
       {/* Mobile Menu */}
+      
       <div className={`site-mobile-menu site-navbar-target ${isMenuOpen ? 'active' : ''}`}>
         <div className="site-mobile-menu-header">
           <div className="site-mobile-menu-close">
@@ -28,9 +30,11 @@ const Navbar = () => {
             <div className="site-navigation">
               <div className="row g-0 align-items-center">
                 <div className="col-2">
-                  <Link to="/" className="logo m-0 float-start">
+                  {/* <Link to="/" className="logo m-0 float-start"> */}
+                  <a href="/" className="logo m-0 float-start">
                     <img src="./images/logo_gobhidalgo.png" alt="Logo SIGEH" style={{paddingBottom: '10px'}} />
-                  </Link>
+                  </a>
+                  {/* </Link> */}
                 </div>
                 
                 {/* Desktop Menu (600px or more) */}
@@ -55,19 +59,22 @@ const Navbar = () => {
             <div className="site-navigation">
               <div className="row g-0 align-items-center">
                 <div className="col-2">
-                  <Link to="/" className="logo m-0 float-start">SIGEH<span className="text-primary"></span></Link>
+                  {/* <Link to="/" className="logo m-0 float-start">SIGEH<span className="text-primary"></span></Link> */}
+                  <a href="/" className="logo m-0 float-start">SIGEH<span className="text-primary"></span></a>
                 </div>
                 
                 <div className="col-8 text-center">
                   <ul className="js-clone-nav d-none d-lg-inline-block text-start site-menu mx-auto">
-                    <li><Link to="/">Inicio</Link></li>
-                    <li><Link to="/solicitud-productos">Solicitud de Productos</Link></li>
+                    <li><a href="/">Inicio</a></li>
+                    {/* <li><Link to="/solicitud-productos">Solicitud de Productos</Link></li> */}
+                    <li><a href="./pags/h_productos.php#solicitud">Solicitud de Productos</a></li>
                     
                     <li className="has-children">
                       <a>Mapas</a>
                       <ul className="dropdown">
-                        <li><Link to="/hidalgo-en-mapas">Hidalgo en Mapas</Link></li>
-                        <li><Link to="/atlas-interactivo" style={{color: 'orange', cursor: 'default'}}>Atlas interactivo del estado de Hidalgo</Link></li>
+                        {/* <li><Link to="/hidalgo-en-mapas">Hidalgo en Mapas</Link></li> */}
+                        <li><a href="./pags/h_mapas.php">Hidalgo en Mapas</a></li>
+                        <li><a href="./maps/atlas.html" style={{color: 'orange', cursor: 'default'}}>Atlas interactivo del estado de Hidalgo</a></li>
                       </ul>
                     </li>
                     
@@ -75,25 +82,33 @@ const Navbar = () => {
                       <a>Estadísticas</a>
                       <ul className="dropdown">
                         <li className="has-children">
-                          <Link to="/mapas-web">Mapas Web y Proyectos Específicos</Link>
+                          {/* <Link to="/mapas-web">Mapas Web y Proyectos Específicos</Link> */}
+                          <a href="./pags/h_numeros.php">Mapas Web y Proyectos Específicos</a>
                           <ul className="dropdown">
-                            <li><Link to="/rellenos-sanitarios">Relleno Sanitario</Link></li>
-                            <li><Link to="/complejidad-economica">Complejidad Economica</Link></li>
-                            <li><Link to="/prioridad-alimentaria">Prioridad Alimentaria</Link></li>
+                            {/* <li><Link to="/rellenos-sanitarios">Relleno Sanitario</Link></li> */}
+                            <li><a href="./pags/rellenos">Relleno Sanitario</a></li>
+                            {/* <li><Link to="/complejidad-economica">Complejidad Economica</Link></li> */}
+                            <li><a href="./pags/complejidad">Complejidad Economica</a></li>
+                            {/* <li><Link to="/prioridad-alimentaria">Prioridad Alimentaria</Link></li> */}
+                            <li><a href="./pags/alimentario">Prioridad Alimentaria</a></li>
                           </ul>
                         </li>
                         
                         <li className="has-children">
-                          <Link to="/hidalgo-en-numeros">Hidalgo en Números</Link>
+                          {/* <Link to="/hidalgo-en-numeros">Hidalgo en Números</Link> */}
+                          <a href="pags/h_numeros.php">Hidalgo en Números</a>
                           <ul className="dropdown">
-                            <li><Link to="/infografias-municipales">Infografías municipales</Link></li>
-                            <li><Link to="/banco-informacion">Banco único de Información Estadística</Link></li>
+                            {/* <li><Link to="/infografias-municipales">Infografías municipales</Link></li> */}
+                            <li><a href="./pags/infografias">Infografías municipales</a></li>
+                            {/* <li><Link to="/banco-informacion">Banco único de Información Estadística</Link></li> */}
+                            <li><a href="./pags/consulta_mun.php">Banco único de Información Estadística</a></li>
                           </ul>
                         </li>
                       </ul>
                     </li>
                     
-                    <li><Link to="/marco-normativo">Marco Normativo</Link></li>
+                    {/* <li><Link to="/marco-normativo">Marco Normativo</Link></li> */}
+                    <li><a href="./pags/h_normatividad.php">Marco Normativo</a></li>
                   </ul>
                 </div>
                 

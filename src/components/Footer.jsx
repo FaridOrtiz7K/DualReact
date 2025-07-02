@@ -14,12 +14,14 @@ const Footer = () => {
               <h3>Social</h3>
               <ul className="list-unstyled social">
                 <li>
-                  <a href="https://www.facebook.com/profile.php?id=100069229599131" target="_blank" rel="noopener noreferrer">
+                  {/* <a href="https://www.facebook.com/profile.php?id=100069229599131" target="_blank" rel="noopener noreferrer"> */}
+                  <a href="#">
                     <span className="icon-facebook"></span>
                   </a>
                 </li>
                 <li>
-                  <a href="https://twitter.com/gobiernohidalgo?s=20" target="_blank" rel="noopener noreferrer">
+                  {/* <a href="https://twitter.com/gobiernohidalgo?s=20" target="_blank" rel="noopener noreferrer"> */}
+                  <a href="#">
                     <span className="icon-twitter"></span>
                   </a>
                 </li>
