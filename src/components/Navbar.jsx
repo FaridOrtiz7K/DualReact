@@ -23,7 +23,7 @@ const Navbar = () => {
           <div className="site-mobile-menu-close">
             <span className="icofont-close js-menu-toggle" onClick={toggleMenu}></span>
           </div>
-          <img src="./images/logo_menu2.png" alt="Menú SIGEH" className="mobile-menu-image" />
+          <img src="images/logo_menu2.png" alt="Menú SIGEH" className="mobile-menu-image" />
         </div>
         <div className="site-mobile-menu-body"></div>
       </div>
