@@ -22,27 +22,27 @@ const App = () => {
       linkUrl: "./pags/h_numeros.php"
     },
     {
-      title: "Hidalgo en números",
-      description: "Información relevante y sintetizada en tableros dinámicos e infografías por municipio",
-      imageUrl: "./images/sec/2.png",
+       title: "Monitoreo de indicadores nacionales",
+      description: "Tableros donde se muestra la posición de Hidalgo con respecto a indicadores nacionales",
+      imageUrl: "./images/sec/3.png",
       linkUrl: "./pags/h_numeros.php"
     },
     {
-      title: "Hidalgo en números",
-      description: "Información relevante y sintetizada en tableros dinámicos e infografías por municipio",
-      imageUrl: "./images/sec/2.png",
+      title: "Atlas interactivo del estado de Hidalgo",
+      description: "Más de 100 capas de información geográfica relevante categorizada por sectores",
+      imageUrl: "./images/atlas.png",
       linkUrl: "./pags/h_numeros.php"
     },
     {
-      title: "Hidalgo en números",
-      description: "Información relevante y sintetizada en tableros dinámicos e infografías por municipio",
-      imageUrl: "./images/sec/2.png",
+      title: "Productos y servicios",
+      description: "Cartografía temática, análisis de datos, geoestadística, entre otros servicios que ofrece el SIGEH",
+      imageUrl: "./images/sec/5.png",
       linkUrl: "./pags/h_numeros.php"
     },
     {
-      title: "Hidalgo en números",
-      description: "Información relevante y sintetizada en tableros dinámicos e infografías por municipio",
-      imageUrl: "./images/sec/2.png",
+      title: "Marco Normativo",
+      description: "Normas y bases legales vigentes y actualizadas del uso y manejo de información estadística y geográfica",
+      imageUrl: "./images/sec/6.jpg",
       linkUrl: "./pags/h_numeros.php"
     },
 
