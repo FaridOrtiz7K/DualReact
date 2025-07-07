@@ -5,6 +5,8 @@ import MapSection from './components/MapSection';//importar MapSection
 import Banner from './components/Banner';//importar Banner
 import { SectionsGrid } from './components/SectionCard'; //importar SectionsGrid
 import titleimage from './components/titleImage'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './index.css';
 
 const App = () => {
   // Mueve la declaración de sectionsData fuera del JSX para que se ejecute en el main 

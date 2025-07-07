@@ -10,10 +10,16 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@popperjs/core": "^2.11.8",
+    "aos": "^2.3.4",
     "bootstrap": "^5.3.7",
+    "flatpickr": "^4.6.13",
+    "glightbox": "^3.3.1",
+    "jquery": "^3.7.1",
     "react": "^19.1.0",
     "react-bootstrap": "^2.10.10",
-    "react-dom": "^19.1.0"
+    "react-dom": "^19.1.0",
+    "tiny-slider": "^2.9.4"
   },
   "devDependencies": {
     "@eslint/js": "^9.29.0",
