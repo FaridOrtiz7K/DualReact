@@ -1,0 +1,133 @@
+/* Reset y base */
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+.footer-container {
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+.site-footer {
+  background: #691c32;
+  font-family: "Montserrat", sans-serif;
+  width: 100%;
+  padding: 30px 0;
+  color: white;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+/* Layout */
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 300px;
+  padding: 0 15px;
+  margin-bottom: 20px;
+}
+
+/* Logo */
+.footer-logo {
+  display: block;
+  margin: 0 auto;
+  width: 200px; 
+  height: auto;
+}
+
+/* Sección Social */
+.social-widget {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.social-title {
+  font-size: 11px !important; 
+  font-weight: 700 !important; 
+  letter-spacing: 0.15rem;
+  margin-bottom: 15px !important;
+  text-transform: uppercase;
+}
+
+.social {
+  padding: 0;
+  margin: 0 -5px;
+}
+
+.social li {
+  display: inline-block;
+  margin: 0 5px; 
+}
+
+.social li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  background: #fff;
+  border-radius: 4px;
+  color: #691c32;
+  transition: all 0.3s ease;
+}
+
+/* Sección Contacto */
+.contact-section {
+  text-align: center !important; 
+}
+
+.contact-title {
+  font-size: 16px;
+  margin-bottom: 15px !important;
+}
+
+.contact-organization {
+  font-size: 14px !important; 
+  margin-bottom: 15px;
+  font-weight: normal;
+}
+
+address {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* Copyright */
+.copyright {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+}
+.footer-shield {
+  width: 180px;
+  height: auto;
+  display: block;
+  margin: 0 auto 10px; 
+}
+/* Responsive */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .footer-section {
+    text-align: center;
+    margin-bottom: 30px;
+    width: 100%;
+  }
+  
+  .footer-logo {
+    width: 160px;
+  }
+}

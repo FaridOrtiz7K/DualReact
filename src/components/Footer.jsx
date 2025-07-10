@@ -1,29 +1,25 @@
 import React from 'react';
-import '../../src/assets/css/style.css';
-import '../assets/css/fonts/flaticon/font/flaticon.css'
-import '../assets/css/fonts/icomoon/style.css'
-import '../../src/assets/css/glightbox.min.css'
+import '../../src/assets/css/footer.css';
+
 const Footer = () => {
   return (
-    <footer className="site-footer">
-      <div className="container">
-        <div className="row">
-          <div className="col-lg-4">
+    <div className="footer-container"> {/* Nuevo contenedor */}
+      <footer className="site-footer">
+        <div className="footer-content">
+          <div className="footer-section">
             <div className="widget">
-              <img src="./images/logo_gobhidalgo.png" alt="Gobierno de Hidalgo" />
+              <img src="./images/logo_gobhidalgo.png" alt="Gobierno de Hidalgo" className="footer-logo" />
             </div>
             
-            <div className="widget" style={{textAlign: 'center'}}>
-              <h3>Social</h3>
+            <div className="widget social-widget">
+              <h3 className="social-title">Social</h3>
               <ul className="list-unstyled social">
                 <li>
-                  {/* <a href="https://www.facebook.com/profile.php?id=100069229599131" target="_blank" rel="noopener noreferrer"> */}
                   <a href="#">
                     <span className="icon-facebook"></span>
                   </a>
                 </li>
                 <li>
-                  {/* <a href="https://twitter.com/gobiernohidalgo?s=20" target="_blank" rel="noopener noreferrer"> */}
                   <a href="#">
                     <span className="icon-twitter"></span>
                   </a>
@@ -32,27 +28,31 @@ const Footer = () => {
             </div>
           </div>
           
-          <div className="col-lg-4 ps-lg-5">
+          <div className="footer-section">
             <div className="widget">
-              <img src="./images/escudo_blanco.svg" alt="Escudo de Hidalgo" />
-              <p style={{textAlign: 'center'}}>© {new Date().getFullYear()} Gobierno del Estado de Hidalgo</p>
+              <img 
+                src="./images/escudo_blanco.svg" 
+                alt="Escudo de Hidalgo" 
+                className="footer-shield" // Clase añadida
+              />
+              <p className="copyright">© {new Date().getFullYear()} Gobierno del Estado de Hidalgo</p>
             </div>
           </div>
           
-          <div className="col-lg-4" style={{textAlign: 'center', fontWeight: 'normal'}}>
+          <div className="footer-section contact-section">
             <div className="widget">
-              <h2 className="mb-4">Contacto</h2>
-              <h3 style={{fontWeight: 'normal'}}>CITNOVA | EDIFICIO INNOVACIÓN <br /><br /></h3>
-              <h3 style={{fontWeight: 'normal'}}>
+              <h2 className="contact-title">Contacto</h2>
+              <p className="contact-organization">CITNOVA | EDIFICIO INNOVACIÓN</p>
+              <address>
                 Boulevard Circuito La Concepción #3 <br />
                 Colonia La Concepción, CP 42162,<br />
                 San Agustín Tlaxiaca, Hidalgo
-              </h3>
+              </address>
             </div>
           </div>
         </div>
-      </div>
-    </footer>
+      </footer>
+    </div>
   );
 };
 
