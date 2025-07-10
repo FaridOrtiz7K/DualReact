@@ -2,9 +2,7 @@ import React from 'react';
 import '../../src/assets/css/style.css';
 import '../assets/css/fonts/flaticon/font/flaticon.css'
 import '../assets/css/fonts/icomoon/style.css'
-import '../../src/assets/css/aos.css'
 import '../../src/assets/css/glightbox.min.css'
-import '../../src/assets/css/tiny-slider.css'
 const Footer = () => {
   return (
     <footer className="site-footer">

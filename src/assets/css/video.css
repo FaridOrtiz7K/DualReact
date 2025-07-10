@@ -1,0 +1,105 @@
+/* Estilo del overlay */
+.video-popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.85);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Contenedor del video */
+.video-popup-content {
+  position: relative;
+  width: 40%;
+  max-width: 800px;
+}
+
+/* Estilo del botón de cerrar */
+.video-close-btn {
+  position: absolute;
+  top: -20px;
+  right: -20px;
+  width: 50px;
+  height: 50px;
+  background: #ff0000; /* Fondo rojo */
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 1001;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+.video-close-btn:hover {
+  background: #cc0000; /* Rojo más oscuro al pasar el mouse */
+  transform: scale(1.15);
+}
+
+/* Icono de cerrar */
+.close-icon {
+  color: white;
+  font-size: 20px;
+}
+.close-icon-xl {
+  color: white;
+  font-size: 30px; /* Aumentado de 20px a 30px */
+  font-weight: bold;
+}
+.video-close-btn:hover {
+  background: #cc0000;
+  transform: scale(1.15);
+}
+/* Estilo del video */
+.video-popup-content video {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .video-popup-content {
+    width: 95%;
+  }
+  
+  .video-close-btn {
+    top: -10px;
+    right: -10px;
+    width: 45px;
+    height: 45px;
+  }
+  .close-icon-xl {
+    font-size: 10px;
+  }
+}
+.play-message {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 15px 25px;
+  border-radius: 8px;
+  text-align: center;
+  z-index: 100;
+  pointer-events: none;
+}
+
+.play-message p {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+/* Asegúrate que el overlay permita clicks */
+.video-popup-overlay {
+  cursor: pointer;
+}
