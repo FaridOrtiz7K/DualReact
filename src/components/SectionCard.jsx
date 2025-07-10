@@ -1,4 +1,5 @@
 import React from 'react';
+import '../../src/assets/css/SectionCard.css';
 
 const SectionCard = ({ 
   title, 

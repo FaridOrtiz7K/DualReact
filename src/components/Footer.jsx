@@ -42,7 +42,9 @@ const Footer = () => {
           <div className="footer-section contact-section">
             <div className="widget">
               <h2 className="contact-title">Contacto</h2>
+              <br></br>
               <p className="contact-organization">CITNOVA | EDIFICIO INNOVACIÓN</p>
+              <br></br>
               <address>
                 Boulevard Circuito La Concepción #3 <br />
                 Colonia La Concepción, CP 42162,<br />
