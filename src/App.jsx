@@ -6,6 +6,8 @@ import Banner from './components/Banner';//importar Banner
 import VideoPopup from './components/VideoPopup';//importar el video
 import { SectionsGrid } from './components/SectionCard'; //importar SectionsGrid
 import titleimage from './components/titleImage'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min';
 
 
 const App = () => {
