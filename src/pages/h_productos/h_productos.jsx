@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
-import Banner from '../components/Banner';
-import TabsSection from '../components/TabsSection';
-import MapSelector from '../components/MapSelector';
-import RequestForm from '../components/RequestForm';
+import Navbar from '../../components/Navbar';
+import Footer from '../../components/Footer';
+import Banner from '../../components/Banner';
+import TabsSection from './components/TabsSection';
+import MapSelector from './components/MapSelector';
+import RequestForm from './components/RequestForm';
 
 const ProductsPage = () => {
   const bannerData = {
@@ -15,7 +15,7 @@ const ProductsPage = () => {
 
   return (
     <div className="products-page">
-      <Header />
+      <Navbar />
       <Banner {...bannerData} />
       
       <section className="section">

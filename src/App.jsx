@@ -1,12 +1,11 @@
 import React from 'react';
-import Navbar from './components/Navbar';//importar NavBar
-import Footer from './components/Footer';//importar SectionsGrid
-import MapSection from './components/MapSection';//importar MapSection
-import Banner from './components/Banner';//importar Banner
-import VideoPopup from './components/VideoPopup';//importar el video
-import { SectionsGrid } from './components/SectionCard'; //importar SectionsGrid
-import titleimage from './components/titleImage'
-
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
+import Home from '../src/pages /Home';
+import h_mapas from './pages/h_mapas/h_mapas';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min';
 
 const App = () => {
   // Mueve la declaración de sectionsData fuera del JSX para que se ejecute en el main 
@@ -64,23 +63,17 @@ const App = () => {
     }
   ];
   return (
-    <div className="app">
-      <Navbar />
-      <main>
-        <titleimage></titleimage>
-        <SectionsGrid sections={sectionsData} />
-        <div>
-          <Banner items={customBanners} />
-        </div>
-        <MapSection
-          title="UBICACIÓN OFICIAL"
-          mapUrl="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3745.994347693391!2d-98.8041431242979!3d20.134283417897844!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d10a8d523d568d%3A0x92d9d067fe2857fc!2sCITNOVA!5e0!3m2!1ses-419!2smx!4v1709925226635!5m2!1ses-419!2smx"
-        />
-        <hr></hr>
-        <VideoPopup />
-      </main>
-      <Footer />
-    </div>
+    <Router>
+      <div className="app">
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          {/* Aquí puedes agregar más rutas cuando las necesites */}
+          {/* Ejemplo: <Route path="/mapas" element={<h_mapas />} /> */}
+        </Routes>
+        <Footer />
+      </div>
+    </Router>
   );
 };
 
