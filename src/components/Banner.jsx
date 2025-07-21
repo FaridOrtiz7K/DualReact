@@ -1,16 +1,17 @@
 import React from 'react';
 import { Carousel } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import '../assets/css/banner.css';
 
 const Banner = ({ items }) => {
   return (
-    <div className="container">
-      <Carousel indicators interval={5000}>
+    <div className="banner-container">
+      <Carousel indicators interval={5000} controls={false}>
         {items.map((item, index) => (
           <Carousel.Item key={index}>
             <a href={item.pdfLink} target="_blank" rel="noopener noreferrer">
               <img
-                className="d-block w-100"
+                className="d-block w-100 banner-image"
                 src={item.imageSrc}
                 alt={item.altText}
               />
@@ -22,7 +23,6 @@ const Banner = ({ items }) => {
   );
 };
 
-// Valores por defecto para las props
 Banner.defaultProps = {
   items: [
     {

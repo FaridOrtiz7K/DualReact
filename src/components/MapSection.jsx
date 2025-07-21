@@ -7,7 +7,10 @@ const MapSection = ({ title = "UBICACIÓN", mapUrl }) => {
             <div className="container">
                 <div className="row">
                     <div className="col-md-12">
-                        <h3 className="text-primary" style={{ fontWeight: 700 }}>
+                        <h3 className="title" style={{ 
+                            fontWeight: 700, 
+                            color: 'rgba(98, 19, 51, 1)',
+                        }}>
                             {title}
                         </h3>
                         <hr />
