@@ -1,22 +1,21 @@
-import React, { useState } from 'react';
-import Navbar from '../../components/Navbar';
-import Footer from '../../components/Footer';
-import Banner from '../../components/Banner';
+import React from 'react';
+import Banner_P from '../../components/Banner_P'; 
 import TabsSection from './components/TabsSection';
 import MapSelector from './components/MapSelector';
 import RequestForm from './components/RequestForm';
 
+import productosImage from '../../../public/images/productos.jpg';
+
 const ProductsPage = () => {
   const bannerData = {
-    title: "Productos y servicios",
-    subtitle: "Cartografía temática, análisis de datos, geoestadística, entre otros servicios que ofrece el SIGEH",
-    backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/productos.jpg')"
+    titulo: "Productos y servicios", 
+    subtitulo: "Cartografía temática, análisis de datos, geoestadística, entre otros servicios que ofrece el SIGEH",
+    imagenFondo: productosImage 
   };
 
   return (
     <div className="products-page">
-      <Navbar />
-      <Banner {...bannerData} />
+      <Banner_P {...bannerData} />
       
       <section className="section">
         <div className="container">
@@ -33,8 +32,6 @@ const ProductsPage = () => {
       <section className="container" id="solicitud">
         <RequestForm />
       </section>
-
-      <Footer />
     </div>
   );
 };
