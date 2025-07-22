@@ -1,13 +1,14 @@
 import React from 'react';
-import Navbar from '../../components/Navbar';
-import Footer from '../../components/Footer';
-import Banner from '../../components/Banner';
+import Banner from '../../components/Banner_P';
 import AccordionSection from './components/AccordionSection';
+
+import productosImage from '../../../public/images/cel_map2.jpg';
+
 const HidalgoMapsPage = () => {
   const bannerData = {
-    title: "Hidalgo en Mapas",
-    subtitle: "Mapas interactivos de interés ciudadano, Gastronomía, recreación, Cultura, etc.",
-    backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/cel_map2.jpg')"
+    titulo: "Hidalgo en Mapas",
+    subtitulo: "Mapas interactivos de interés ciudadano, Gastronomía, recreación, Cultura, etc.",
+    imagenFondo: productosImage 
   };
 
   const accordionData = [
@@ -38,7 +39,6 @@ const HidalgoMapsPage = () => {
 
   return (
     <div className="hidalgo-maps-page">
-      <Navbar />
       <Banner {...bannerData} />
       
       <section className="section">
@@ -61,7 +61,6 @@ const HidalgoMapsPage = () => {
         </div>
       </section>
       
-      <Footer />
     </div>
   );
 };

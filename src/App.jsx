@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Home from '../src/pages/home';
-import h_mapas from './pages/h_mapas/h_mapas';
+import Mapas from './pages/h_mapas/h_mapas';
 import Productos from '../src/pages/h_productos/h_productos'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
@@ -16,7 +16,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/h_productos" element={<Productos />} />
-          <Route path="/h_mapas" element={<h_mapas />} />
+          <Route path="/h_mapas" element={<Mapas />} />
           {/* Aquí puedes agregar más rutas cuando las necesites */}
           {/* Ejemplo: <Route path="/mapas" element={<h_mapas />} /> */}
         </Routes>
