@@ -1,7 +1,7 @@
 import React from 'react';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
-import Banner from '../components/Banner';
+import Navbar from '../../components/Navbar';
+import Footer from '../../components/Footer';
+import Banner from '../../components/Banner';
 import NormativeList from '../components/NormativeList';
 
 const NormativePage = () => {
@@ -25,7 +25,7 @@ const NormativePage = () => {
 
   return (
     <div className="normative-page">
-      <Header />
+      <Navbar />
       <Banner {...bannerData} />
       
       <section className="container">
