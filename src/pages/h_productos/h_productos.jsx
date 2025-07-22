@@ -5,12 +5,11 @@ import Banner from '../../components/Banner';
 import TabsSection from './components/TabsSection';
 import MapSelector from './components/MapSelector';
 import RequestForm from './components/RequestForm';
-
 const ProductsPage = () => {
   const bannerData = {
     title: "Productos y servicios",
     subtitle: "Cartografía temática, análisis de datos, geoestadística, entre otros servicios que ofrece el SIGEH",
-    backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/productos.jpg')"
+    backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('public/images/productos.jpg')"
   };
 
   return (

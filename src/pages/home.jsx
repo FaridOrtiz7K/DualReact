@@ -5,6 +5,7 @@ import VideoPopup from '../components/VideoPopup';
 import { SectionsGrid } from '../components/SectionCard';
 import titleimage from '../components/titleImage';
 
+
 const Home = () => {
   const sectionsData = [
     {

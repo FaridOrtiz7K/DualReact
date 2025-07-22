@@ -38,7 +38,7 @@ const HidalgoMapsPage = () => {
 
   return (
     <div className="hidalgo-maps-page">
-      <Header />
+      <Navbar />
       <Banner {...bannerData} />
       
       <section className="section">

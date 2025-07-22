@@ -144,12 +144,12 @@ const Navbar = () => {
                 <div className="col-8 text-center">
                   <ul className="js-clone-nav d-none d-lg-inline-block text-start site-menu mx-auto">
                     <li><a href="/">Inicio</a></li>
-                    <li><a href="./pags/h_productos.php#solicitud">Solicitud de Productos</a></li>
+                    <li><Link to="/h_productos">Solicitud de Productos</Link></li>
                     
                     <li className="has-children">
                       <a>Mapas</a>
                       <ul className="dropdown">
-                        <li><a href="./pags/h_mapas.php">Hidalgo en Mapas</a></li>
+                        <li><a href="./pages/h_mapas/h_mapas.jsx">Hidalgo en Mapas</a></li>
                         <li><a href="./maps/atlas.html" style={{color: 'orange', cursor: 'default'}}>Atlas interactivo del estado de Hidalgo</a></li>
                       </ul>
                     </li>
