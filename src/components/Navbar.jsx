@@ -149,8 +149,8 @@ const Navbar = () => {
                     <li className="has-children">
                       <a>Mapas</a>
                       <ul className="dropdown">
-                        <li><a href="./pages/h_mapas/h_mapas">Hidalgo en Mapas</a></li>
-                        <li><a href="./maps/atlas.html" style={{color: 'orange', cursor: 'default'}}>Atlas interactivo del estado de Hidalgo</a></li>
+                        <li><a href="/h_mapas">Hidalgo en Mapas</a></li>
+                        <li><a href="/atlas" style={{color: 'orange', cursor: 'default'}}>Atlas interactivo del estado de Hidalgo</a></li>
                       </ul>
                     </li>
                     
@@ -158,25 +158,25 @@ const Navbar = () => {
                       <a>Estadísticas</a>
                       <ul className="dropdown">
                         <li className="has-children">
-                          <a href="./pags/h_numeros.php">Mapas Web y Proyectos Específicos</a>
+                          <a href="/h_numeros">Mapas Web y Proyectos Específicos</a>
                           <ul className="dropdown">
-                            <li><a href="./pags/rellenos">Relleno Sanitario</a></li>
-                            <li><a href="./pags/complejidad">Complejidad Economica</a></li>
-                            <li><a href="./pags/alimentario">Prioridad Alimentaria</a></li>
+                            <li><a href="/rellenos">Relleno Sanitario</a></li>
+                            <li><a href="/complejidad">Complejidad Economica</a></li>
+                            <li><a href="/alimentario">Prioridad Alimentaria</a></li>
                           </ul>
                         </li>
                         
                         <li className="has-children">
-                          <a href="pags/h_numeros.php">Hidalgo en Números</a>
+                          <a href="/h_numeros">Hidalgo en Números</a>
                           <ul className="dropdown">
-                            <li><a href="./pags/infografias">Infografías municipales</a></li>
-                            <li><a href="./pags/consulta_mun.php">Banco único de Información Estadística</a></li>
+                            <li><a href="/infografias">Infografías municipales</a></li>
+                            <li><a href="/consulta_mun.php">Banco único de Información Estadística</a></li>
                           </ul>
                         </li>
                       </ul>
                     </li>
                     
-                    <li><a href="./pags/h_normatividad.php">Marco Normativo</a></li>
+                    <li><a href="/h_normatividad">Marco Normativo</a></li>
                   </ul>
                 </div>
                 
