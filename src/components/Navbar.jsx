@@ -144,7 +144,7 @@ const Navbar = () => {
                 <div className="col-8 text-center">
                   <ul className="js-clone-nav d-none d-lg-inline-block text-start site-menu mx-auto">
                     <li><a href="/">Inicio</a></li>
-                    <li><a href="./pages/h_productos/h_productos">Solicitud de Productos</a></li>
+                    <li><a href="/h_productos">Solicitud de Productos</a></li>
                     
                     <li className="has-children">
                       <a>Mapas</a>
