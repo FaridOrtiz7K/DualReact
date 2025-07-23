@@ -1,21 +1,22 @@
 import React from 'react';
+import styles from '../components/NormativeList.module.css';
 
 const NormativeList = ({ items }) => {
   return (
-    <ul className="list-group list-group-flush">
+    <div className={styles.normativeContainer}>
       {items.map((item, index) => (
-        <li key={index} className="list-group-item">
+        <div key={index} className={styles.normativeItem}>
           <a 
             href={item.url} 
             target="_blank" 
             rel="noopener noreferrer"
-            className="normative-link"
+            className={styles.normativeLink}
           >
             {item.title}
           </a>
-        </li>
+        </div>
       ))}
-    </ul>
+    </div>
   );
 };
 

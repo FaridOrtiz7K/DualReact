@@ -1,0 +1,71 @@
+/* Estilos generales */
+.normativeContainer {
+  font-family: "Montserrat", sans-serif;
+  margin: 20px 0;
+  width: 100%;
+}
+
+.normativeItem {
+  padding: 12px 15px;
+  border-bottom: 1px solid #e1e1e1;
+  transition: all 0.3s ease;
+}
+
+.normativeItem:hover {
+  background-color: #f8f8f8;
+}
+
+.normativeLink {
+  color: #333;
+  text-decoration: none;
+  font-size: 14px;
+  display: block;
+  position: relative;
+  padding-left: 15px;
+}
+
+/*.normativeLink:before {
+  content: "•";
+  color: #691c32;
+  position: absolute;
+  left: 0;
+}*/
+
+.normativeLink:hover {
+  color: #691c32;
+  font-weight: 600;
+}
+
+/* Estilos para el título y separador */
+.normativeTitle {
+  color: #691c32;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.customHr {
+  border: 0;
+  height: 1px;
+  background: #d1d1d1;
+  margin: 15px 0 25px;
+}
+
+/* Estilo para el botón Volver */
+.readMore {
+  display: inline-block;
+  padding: 8px 20px;
+  background-color: #691c32;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 14px;
+  transition: background-color 0.3s;
+  margin-top: 20px;
+}
+
+.readMore:hover {
+  background-color: #4d1424;
+  color: white;
+}

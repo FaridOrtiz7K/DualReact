@@ -1,7 +1,7 @@
 import Banner from '../../components/Banner_P';
 import AccordionSection from './components/AccordionSection';
 import './components/style.css'
-import productosImage from '../../../public/images/cel_map2.jpg';
+import productosImage from '/images/cel_map2.jpg';
 
 const HidalgoMapsPage = () => {
 

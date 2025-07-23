@@ -2,6 +2,10 @@ import './components/style.css'
 import Banner_P from '../../components/Banner_P'; 
 import ServicesTabs from './components/ServicesTabs';
 import MapSelector from './components/MapSelector';
+import RequestForm from './components/RequestForm';
+
+import productosImage from '/images/productos.jpg';
+
 const ProductsPage = () => {
   const bannerData = {
     title: "Productos y servicios",
