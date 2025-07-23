@@ -1,0 +1,33 @@
+.accordion-button {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.icono-imagen {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+}
+
+.list-group-item {
+  padding: 12px 20px;
+  border-left: none;
+  border-right: none;
+  transition: all 0.3s ease;
+}
+
+.list-group-item:hover {
+  background-color: #f8f9fa;
+}
+
+.site-cover2 {
+  padding: 100px 0;
+  color: white;
+}
+
+.read-more {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 500;
+}

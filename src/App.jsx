@@ -20,6 +20,9 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/h_productos" element={<Productos />} />
           <Route path="/h_mapas" element={<Mapas />} />
+          <Route path="/h_numeros" element={<Numeros />} />
+          <Route path="/consulta_mun" element={<Consulta />} />
+          <Route path="/h_normatividad" element={<Normatividad />} />
           {/* Aquí puedes agregar más rutas cuando las necesites */}
           {/* Ejemplo: <Route path="/mapas" element={<h_mapas />} /> */}
         </Routes>

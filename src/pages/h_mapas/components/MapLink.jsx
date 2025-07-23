@@ -14,7 +14,7 @@ const MapLink = ({ path, name }) => {
   return (
     <a 
       href={path} 
-      className="list-group-item list-group-item-action" 
+      className="list-group-item list-group-item-action original-map-link" 
       onClick={openPopup}
     >
       {name}

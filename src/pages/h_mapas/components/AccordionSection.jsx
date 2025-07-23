@@ -5,26 +5,26 @@ const AccordionSection = ({ id, collapseId, title, icon, items, defaultOpen = fa
   const [isOpen, setIsOpen] = useState(defaultOpen);
 
   return (
-    <div className="accordion-item">
-      <h2 className="accordion-header" id={id}>
+    <div className="accordion-item original-accordion-item">
+      <h2 className="accordion-header original-accordion-header" id={id}>
         <button 
-          className={`accordion-button ${!isOpen ? 'collapsed' : ''}`}
+          className={`accordion-button original-accordion-button ${!isOpen ? 'collapsed' : ''}`}
           type="button"
           onClick={() => setIsOpen(!isOpen)}
           aria-expanded={isOpen}
           aria-controls={collapseId}
         >
-          <img src={icon} alt="Icono" className="icono-imagen" />
+          <img src={icon} alt="Icono" className="icono-imagen original-icon" />
           {title}
         </button>
       </h2>
       <div 
         id={collapseId}
-        className={`accordion-collapse collapse ${isOpen ? 'show' : ''}`}
+        className={`accordion-collapse collapse original-accordion-collapse ${isOpen ? 'show' : ''}`}
         aria-labelledby={id}
         data-bs-parent="#accordionExample"
       >
-        <div className="list-group">
+        <div className="list-group original-list-group">
           {items.map((item, index) => (
             <MapLink key={index} path={item.path} name={item.name} />
           ))}
