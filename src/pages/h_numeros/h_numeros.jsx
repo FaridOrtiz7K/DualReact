@@ -2,7 +2,7 @@ import React from 'react';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
 import Banner from '../../components/Banner';
-import InfoCard from '../components/InfoCard';
+import InfoCard from './components/InfoCard';
 
 const NumbersPage = () => {
   const bannerData = {
@@ -42,7 +42,7 @@ const NumbersPage = () => {
 
   return (
     <div className="numbers-page">
-      <Header />
+      <Navbar />
       <Banner {...bannerData} />
       
       <section className="section">

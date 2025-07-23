@@ -5,6 +5,7 @@ import AccordionSection from './components/AccordionSection';
 import productosImage from '/images/cel_map2.jpg';
 
 const HidalgoMapsPage = () => {
+
   const bannerData = {
     titulo: "Hidalgo en Mapas",
     subtitulo: "Mapas interactivos de interés ciudadano, Gastronomía, recreación, Cultura, etc.",

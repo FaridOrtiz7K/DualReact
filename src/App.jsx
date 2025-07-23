@@ -6,6 +6,8 @@ import Home from '../src/pages/home';
 import Mapas from './pages/h_mapas/h_mapas';
 import Productos from '../src/pages/h_productos/h_productos';
 import Normativas from '../src/pages/h_normatividad/h_normatividad';
+import Numeros from '../src/pages/h_numeros/h_numeros'
+import Consulta from '../src/pages/conuslta_mun/consulta_mun'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 
