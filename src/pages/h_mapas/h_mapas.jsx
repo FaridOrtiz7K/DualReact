@@ -2,7 +2,7 @@ import React from 'react';
 import Banner from '../../components/Banner_P';
 import AccordionSection from './components/AccordionSection';
 
-import productosImage from '../../../public/images/cel_map2.jpg';
+import productosImage from '/images/cel_map2.jpg';
 
 const HidalgoMapsPage = () => {
   const bannerData = {

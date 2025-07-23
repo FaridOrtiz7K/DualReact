@@ -4,7 +4,7 @@ import TabsSection from './components/TabsSection';
 import MapSelector from './components/MapSelector';
 import RequestForm from './components/RequestForm';
 
-import productosImage from '../../../public/images/productos.jpg';
+import productosImage from '/images/productos.jpg';
 
 const ProductsPage = () => {
   const bannerData = {

@@ -4,7 +4,8 @@ import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Home from '../src/pages/home';
 import Mapas from './pages/h_mapas/h_mapas';
-import Productos from '../src/pages/h_productos/h_productos'
+import Productos from '../src/pages/h_productos/h_productos';
+import Normativas from '../src/pages/h_normatividad/h_normatividad';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 
@@ -17,6 +18,7 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/h_productos" element={<Productos />} />
           <Route path="/h_mapas" element={<Mapas />} />
+          <Route path="/h_normatividad" element={<Normativas />} />
           {/* Aquí puedes agregar más rutas cuando las necesites */}
           {/* Ejemplo: <Route path="/mapas" element={<h_mapas />} /> */}
         </Routes>
