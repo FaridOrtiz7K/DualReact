@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Navbar from '../../components/Navbar';
 import Footer from '../../components/Footer';
-import TabsComponent from '../components/TabsComponent';
+import TabsComponent from './components/TabsComponent';
 
 const DataConsultPage = () => {
   const [activeTab, setActiveTab] = useState('mun');
@@ -34,7 +34,7 @@ const DataConsultPage = () => {
 
   return (
     <div className="data-consult-page">
-      <Header />
+      <Navbar />
       
       <section className="section">
         <div className="container" style={{ paddingTop: '2%', paddingBottom: '5%' }}>

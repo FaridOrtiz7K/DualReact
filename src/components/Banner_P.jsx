@@ -5,23 +5,32 @@ const Banner_P = ({
   titulo = "Productos y servicios", 
   subtitulo = "Cartografía temática, análisis de datos, geoestadística, entre otros servicios que ofrece el SIGEH",
   imagenFondo = "", 
-  altura = "400px",
-  paddingTop = "80px"
+  altura = "auto",
+  paddingTop = "80px",
+  overlay = true,
+  singlePage = true
 }) => {
   const estiloBanner = {
-    backgroundImage: imagenFondo ? `url(${imagenFondo})` : "none",
+    backgroundImage: imagenFondo ? `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${imagenFondo})` : "none",
     backgroundSize: 'cover',
     backgroundPosition: 'center',
+    backgroundRepeat: 'no-repeat',
     minHeight: altura,
-    paddingTop: paddingTop
+    cursor: 'default'
   };
 
   return (
-    <div className={styles.bannerContainer} style={estiloBanner}>
-      <div className={styles.bannerContent}>
-        <div className={styles.textContent}>
-          <h1 className={styles.titulo}>{titulo}</h1>
-          <p className={styles.subtitulo}>{subtitulo}</p>
+    <div className={`${styles.siteCover2} ${overlay ? styles.overlay : ''} ${singlePage ? styles.singlePage : ''}`} style={estiloBanner}>
+      <div className="container">
+        <div className={`row ${styles.sameHeight} justify-content-center`}>
+          <div className="col-md-6">
+            <div className={styles.postEntry}>
+              <div className={styles.text} style={{ paddingTop }}>
+                <h2>{titulo}</h2>
+                <p className={styles.cardText}>{subtitulo}</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
