@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import Navbar from '../../components/Navbar';
-import Footer from '../../components/Footer';
+
 import TabsComponent from './components/TabsComponent';
 
 const DataConsultPage = () => {
@@ -34,7 +33,6 @@ const DataConsultPage = () => {
 
   return (
     <div className="data-consult-page">
-      <Navbar />
       
       <section className="section">
         <div className="container" style={{ paddingTop: '2%', paddingBottom: '5%' }}>
@@ -49,7 +47,6 @@ const DataConsultPage = () => {
         </div>
       </section>
       
-      <Footer />
     </div>
   );
 };

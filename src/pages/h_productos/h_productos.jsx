@@ -10,7 +10,7 @@ const ProductsPage = () => {
   const bannerData = {
     title: "Productos y servicios",
     subtitle: "Cartografía temática, análisis de datos, geoestadística, entre otros servicios que ofrece el SIGEH",
-    backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/productos.jpg')"
+    imagenFondo: productosImage 
   };
 
   return (

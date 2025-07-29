@@ -170,7 +170,7 @@ const Navbar = () => {
                           <a href="/h_numeros">Hidalgo en Números</a>
                           <ul className="dropdown">
                             <li><a href="/infografias">Infografías municipales</a></li>
-                            <li><a href="/consulta_mun.php">Banco único de Información Estadística</a></li>
+                            <li><a href="/consulta_mun">Banco único de Información Estadística</a></li>
                           </ul>
                         </li>
                       </ul>

@@ -1,14 +1,14 @@
-import React from 'react';
-import Navbar from '../../components/Navbar';
-import Footer from '../../components/Footer';
-import Banner from '../../components/Banner';
+
+import Banner_P from '../../components/Banner_P'; 
 import InfoCard from './components/InfoCard';
+import productosImage from '/images/tableros.jpg';
+
 
 const NumbersPage = () => {
   const bannerData = {
     title: "Hidalgo en Números",
     subtitle: "Información relevante y sintetizada en tableros dinámicos e infografías por municipio",
-    backgroundImage: "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/tableros.jpg')"
+     imagenFondo: productosImage 
   };
 
   const infoCards = [
@@ -21,33 +21,36 @@ const NumbersPage = () => {
     {
       imageSrc: "../images/infografia_municipal.png",
       link: "info_mun",
-      altText: "Infografía Municipal"
+      altText: "Infografía Municipal",
+      target: "_self"
     },
     {
       imageSrc: "../images/infografia_regional.png",
       link: "info_reg",
-      altText: "Infografía Regional"
+      altText: "Infografía Regional",
+      target: "_self"
     },
     {
       imageSrc: "../images/infografia_metro.png",
       link: "info_met",
-      altText: "Infografía Metropolitana"
+      altText: "Infografía Metropolitana",
+      target: "_self"
     },
     {
       imageSrc: "../images/banco.png",
       link: "consulta_mun.php",
-      altText: "Banco de datos municipales"
+      altText: "Banco de datos municipales",
+      target: "_self"
     }
   ];
 
   return (
-    <div className="numbers-page">
-      <Navbar />
-      <Banner {...bannerData} />
+    <div className="numbers-page original-numbers-page">
+      <Banner_P {...bannerData} />
       
-      <section className="section">
+      <section className="section original-section">
         {infoCards.map((card, index) => (
-          <div className="container" key={index}>
+          <div className="container original-card-container" key={index}>
             <InfoCard 
               imageSrc={card.imageSrc}
               link={card.link}
@@ -57,15 +60,14 @@ const NumbersPage = () => {
           </div>
         ))}
         
-        <div className="container">
-          <hr className="red small-margin" />
-          <div className="col-lg-3">
-            <a href="/" className="read-more">Volver</a>
+        <div className="container original-footer-container">
+          <hr className="red small-margin original-hr" />
+          <div className="col-lg-3 original-back-link">
+            <a href="/" className="read-more original-read-more">Volver</a>
           </div>
         </div>
       </section>
       
-      <Footer />
     </div>
   );
 };

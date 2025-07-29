@@ -1,0 +1,115 @@
+/* Estilos generales */
+.original-numbers-page {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+}
+
+/* Banner styles */
+.original-banner {
+  padding: 120px 0;
+}
+
+.site-cover2-sm {
+  min-height: 400px;
+}
+
+.same-height {
+  height: 100%;
+}
+
+.overlay {
+  position: relative;
+}
+
+.single-page {
+  padding: 5em 0;
+}
+
+.original-banner-text {
+  padding-top: 80px;
+}
+
+.original-banner-title {
+  color: white;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.original-banner-subtitle {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.2rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* Card styles */
+.original-info-card {
+  transition: all 0.3s ease;
+  border-radius: 0;
+  border-bottom: none;
+}
+
+.original-info-card:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.original-card-link {
+  display: block;
+  text-decoration: none;
+}
+
+.original-card-image {
+  transition: transform 0.3s ease;
+  width: 100%;
+}
+
+.vertigo-effect:hover {
+  transform: scale(1.01);
+  opacity: 0.95;
+}
+
+/* Section styles */
+.original-section {
+  padding: 40px 0;
+}
+
+.original-card-container {
+  margin-bottom: 20px;
+}
+
+/* HR style */
+.original-hr.red {
+  border-top: 2px solid #dc3545;
+  opacity: 1;
+  margin: 20px 0;
+}
+
+.small-margin {
+  margin: 15px 0;
+}
+
+/* Back link */
+.original-back-link {
+  padding: 10px 0;
+}
+
+.original-read-more {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+  display: inline-block;
+  padding: 5px 0;
+}
+
+.original-read-more:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+/* Container adjustments */
+.original-footer-container {
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
