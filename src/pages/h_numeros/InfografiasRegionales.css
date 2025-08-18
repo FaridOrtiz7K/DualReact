@@ -1,0 +1,151 @@
+/* Estilos generales */
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f8f9fa;
+}
+
+/* Banner superior */
+.site-cover2 {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.site-cover2-sm {
+  height: 250px;
+}
+
+.site-cover2.overlay::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.same-height {
+  height: 100%;
+}
+
+.post-entry.text-center {
+  position: relative;
+  z-index: 1;
+}
+
+.post-entry h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Contenedor de regiones */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.region-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.region {
+  width: 100%;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: transform 0.3s ease;
+}
+
+@media (min-width: 768px) {
+  .region {
+    width: calc(50% - 15px);
+  }
+}
+
+@media (min-width: 992px) {
+  .region {
+    width: calc(33.333% - 20px);
+  }
+}
+
+.region:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos para los enlaces */
+.region a {
+  color: #2c3e50;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.region a:hover {
+  color: #691c32;
+  text-decoration: underline;
+}
+
+.region > li {
+  list-style-type: none;
+  margin-bottom: 15px;
+}
+
+.region > li > a {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #2c3e50;
+  display: block;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #bc955c;
+  margin-bottom: 10px;
+}
+
+.region ul {
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+.region ul li {
+  margin-bottom: 8px;
+  list-style-type: disc;
+}
+
+.region ul li a {
+  font-size: 0.95rem;
+}
+
+/* Estilo para los números en la región 12 */
+.region ul li a[href*="130"]::before {
+  content: attr(data-number) ". ";
+  color: #7f8c8d;
+  font-weight: bold;
+}
+
+/* Responsive adjustments */
+@media (max-width: 767px) {
+  .post-entry h2 {
+    font-size: 2rem;
+  }
+  
+  .site-cover2 {
+    height: 200px;
+  }
+}
