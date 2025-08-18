@@ -1,0 +1,88 @@
+.infografias-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #f8f9fa; /* Color de fondo de la página */
+}
+
+.hero-banner {
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  margin-bottom: 40px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+              url('/images/infografia_municipal.png') no-repeat center;
+  background-size: cover;
+}
+
+.search-container {
+  margin: 20px auto;
+  width: 90%;
+  max-width: 600px;
+}
+
+.search-input {
+  width: 100%;
+  padding: 12px 20px;
+  border: 2px solid #2c3e50; /* Color principal oscuro */
+  border-radius: 25px; /* Bordes redondeados */
+  font-size: 1rem;
+  background-color: #ffffff; /* Fondo blanco */
+  color: #2c3e50; /* Color de texto oscuro */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #27ae60; /* Color verde al enfocar */
+  box-shadow: 0 0 0 3px rgba(39, 174, 96, 0.2); /* Sombra verde suave */
+}
+
+/* Estilos para los resultados/municipios */
+.municipios-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.municipio-card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  border-left: 4px solid #691c32; /* Borde lateral verde */
+}
+
+.municipio-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.municipio-link {
+  display: block;
+  padding: 15px 20px;
+  color: #2c3e50;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.municipio-link:hover {
+  color: #691c32;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .search-input {
+    padding: 10px 15px;
+  }
+  
+  .municipios-grid {
+    grid-template-columns: 1fr;
+    padding: 10px;
+  }
+}
