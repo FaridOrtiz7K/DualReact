@@ -12,37 +12,37 @@ const Home = () => {
       title: "Hidalgo en mapas",
       description: "Mapas interactivos de interés ciudadano, gastronomía, recreación, cultura, entre otros temas",
       imageUrl: "./images/sec/1.png",
-      linkUrl: "./pags/h_mapas.php"
+      linkUrl: "/h_mapas"
     },
     {
       title: "Hidalgo en números",
       description: "Información relevante y sintetizada en tableros dinámicos e infografías por municipio",
       imageUrl: "./images/sec/2.png",
-      linkUrl: "./pags/h_numeros.php"
+      linkUrl: "/h_numeros"
     },
     {
        title: "Monitoreo de indicadores nacionales",
       description: "Tableros donde se muestra la posición de Hidalgo con respecto a indicadores nacionales",
       imageUrl: "./images/sec/3.png",
-      linkUrl: "./pags/h_numeros.php"
+      linkUrl: "./pags/h_numeros"
     },
     {
       title: "Atlas interactivo del estado de Hidalgo",
       description: "Más de 100 capas de información geográfica relevante categorizada por sectores",
       imageUrl: "./images/atlas.png",
-      linkUrl: "./pags/h_numeros.php"
+      linkUrl: "./pags/h_numeros"
     },
     {
       title: "Productos y servicios",
       description: "Cartografía temática, análisis de datos, geoestadística, entre otros servicios que ofrece el SIGEH",
       imageUrl: "./images/sec/5.png",
-      linkUrl: "./pags/h_numeros.php"
+      linkUrl: "./pags/h_numeros"
     },
     {
       title: "Marco Normativo",
       description: "Normas y bases legales vigentes y actualizadas del uso y manejo de información estadística y geográfica",
       imageUrl: "./images/sec/6.jpg",
-      linkUrl: "./pags/h_numeros.php"
+      linkUrl: "./pags/h_numeros"
     },
   ];
 

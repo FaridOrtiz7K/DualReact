@@ -38,7 +38,7 @@ const NumbersPage = () => {
     },
     {
       imageSrc: "../images/banco.png",
-      link: "consulta_mun.php",
+      link: "/consulta_mun",
       altText: "Banco de datos municipales",
       target: "_self"
     }
