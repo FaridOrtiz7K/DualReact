@@ -11,6 +11,7 @@ import Consulta from '../src/pages/conuslta_mun/consulta_mun'
 import Complejidad from '../src/pages/complejidadEconomica/complejidad'
 //import Alimentario from '../src/pages/priodidadAlimentaria/alimentario'
 //import Rellenos from '../src/pages/rellenoSanitario/rellenos'
+import Info_reg from '../src/pages/h_numeros/InfografiasRegionales'
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
@@ -28,6 +29,7 @@ const App = () => {
           <Route path="/consulta_mun" element={<Consulta />} />
           <Route path="/h_normatividad" element={<Normativas />} />
           <Route path="/complejidad" element={<Complejidad />} />
+          <Route path='info_reg' element={<Info_reg/>}/>
          { /*<Route path="/alimentario" element={<Alimentario />} />
           <Route path="/rellenos" element={<Rellenos />} />*/}
 

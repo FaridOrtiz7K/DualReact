@@ -26,7 +26,7 @@ const NumbersPage = () => {
     },
     {
       imageSrc: "../images/infografia_regional.png",
-      link: "info_reg",
+      link: "/info_reg",
       altText: "Infografía Regional",
       target: "_self"
     },
