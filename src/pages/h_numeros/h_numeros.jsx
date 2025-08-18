@@ -14,7 +14,7 @@ const NumbersPage = () => {
   const infoCards = [
     {
       imageSrc: "../images/infografia_estatal.png",
-      link: "infografias/estatal/Hidalgo.pdf",
+      link: "./documents/infografias/Infografía estatal_22-08-24.pdf",
       altText: "Infografía Estatal",
       target: "_blank"
     },
