@@ -3,7 +3,6 @@ import Banner_P from '../../components/Banner_P';
 import InfoCard from './components/InfoCard';
 import productosImage from '/images/tableros.jpg';
 
-
 const NumbersPage = () => {
   const bannerData = {
     title: "Hidalgo en Números",
@@ -20,7 +19,7 @@ const NumbersPage = () => {
     },
     {
       imageSrc: "../images/infografia_municipal.png",
-      link: "info_mun",
+      link: "/info_mun",
       altText: "Infografía Municipal",
       target: "_self"
     },
@@ -32,7 +31,7 @@ const NumbersPage = () => {
     },
     {
       imageSrc: "../images/infografia_metro.png",
-      link: "info_met",
+      link: "/info_met",
       altText: "Infografía Metropolitana",
       target: "_self"
     },
