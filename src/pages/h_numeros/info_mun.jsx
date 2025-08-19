@@ -1,8 +1,15 @@
 import { useState } from 'react';
 import './components/style_info_mun.css';
+import productosImage from '/images/infografia_municipal.png';
+import Banner_P from '../../components/Banner_P'; 
 
 const InfografiasPage = () => {
     const [searchTerm, setSearchTerm] = useState('');
+    const bannerData = {
+        titulo: "Infografías Municipales",
+        subtitulo: "",
+         imagenFondo: productosImage 
+      };
 
     const municipios = [
         { id: 1, nombre: "Acatlán", file: "13001 - Acatlán.pdf" },
@@ -99,17 +106,7 @@ const InfografiasPage = () => {
         <>
 
             <section className="infografias-page">
-                {/* Banner */}
-                <div className="hero-banner" style={{
-                    background: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/images/infografia_municipal.png') no-repeat center`,
-                    backgroundSize: 'cover'
-                }}>
-                    <div className="container">
-                        <div className="hero-content">
-                            <h1>Infografías Municipales</h1>
-                        </div>
-                    </div>
-                </div>
+                <Banner_P {...bannerData} />
 
                 {/* Contenido principal */}
                 <div className="container main-content">
@@ -132,7 +129,7 @@ const InfografiasPage = () => {
                         {filteredMunicipios.map((municipio) => (
                             <div key={municipio.id} className="municipio-card">
                                 <a
-                                    href={`/municipal/${municipio.file}`}
+                                    href={`./documents/infografias/municipal/${municipio.file}`}
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="municipio-link"
