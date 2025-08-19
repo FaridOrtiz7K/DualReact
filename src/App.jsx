@@ -10,6 +10,8 @@ import Numeros from '../src/pages/h_numeros/h_numeros'
 import Consulta from '../src/pages/conuslta_mun/consulta_mun'
 import Complejidad from '../src/pages/complejidadEconomica/complejidad'
 import InfoMun from '../src/pages/h_numeros/info_mun'
+import InfoMet from '../src/pages/h_numeros/info_met'
+
 
 //import Alimentario from '../src/pages/priodidadAlimentaria/alimentario'
 //import Rellenos from '../src/pages/rellenoSanitario/rellenos'
@@ -32,6 +34,7 @@ const App = () => {
           <Route path="/h_normatividad" element={<Normativas />} />
           <Route path="/complejidad" element={<Complejidad />} />
           <Route path="/info_mun" element={<InfoMun />} />
+          <Route path="/info_met" element={<InfoMet />} />
           <Route path='info_reg' element={<Info_reg/>}/>
          { /*<Route path="/alimentario" element={<Alimentario />} />
           <Route path="/rellenos" element={<Rellenos />} />*/}
