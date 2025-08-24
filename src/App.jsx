@@ -39,7 +39,6 @@ const App = () => {
           <Route path="/rellenos" element={<Rellenos />} />*/}
 
           {/* Aquí puedes agregar más rutas cuando las necesites */}
-          {/* Ejemplo: <Route path="/mapas" element={<h_mapas />} /> */}
         </Routes>
         <Footer />
       </div>
