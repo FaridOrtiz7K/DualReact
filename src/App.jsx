@@ -11,7 +11,7 @@ import Consulta from '../src/pages/conuslta_mun/consulta_mun'
 //import Complejidad from '../src/pages/complejidadEconomica/complejidad'
 import InfoMun from '../src/pages/h_numeros/info_mun'
 import InfoMet from '../src/pages/h_numeros/info_met'
-
+import Mantenimineto from '../src/pages/MaintenancePage';
 
 //import Alimentario from '../src/pages/priodidadAlimentaria/alimentario'
 //import Rellenos from '../src/pages/rellenoSanitario/rellenos'
@@ -35,6 +35,7 @@ const App = () => {
           <Route path="/info_mun" element={<InfoMun />} />
           <Route path="/info_met" element={<InfoMet />} />
           <Route path='info_reg' element={<Info_reg/>}/>
+          <Route path='/mantenimiento' element={<Mantenimineto/>}/>
          { /*<Route path="/alimentario" element={<Alimentario />} />
           <Route path="/rellenos" element={<Rellenos />} />*/}
 

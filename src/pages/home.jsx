@@ -24,13 +24,13 @@ const Home = () => {
        title: "Monitoreo de indicadores nacionales",
       description: "Tableros donde se muestra la posición de Hidalgo con respecto a indicadores nacionales",
       imageUrl: "./images/sec/3.png",
-      linkUrl: "/tablero_indicadores"
+      linkUrl: "/mantenimiento"
     },
     {
       title: "Atlas interactivo del estado de Hidalgo",
       description: "Más de 100 capas de información geográfica relevante categorizada por sectores",
       imageUrl: "./images/atlas.png",
-      linkUrl: "/atlas"
+      linkUrl: "/mantenimiento"
     },
     {
       title: "Productos y servicios",
@@ -48,7 +48,7 @@ const Home = () => {
 
   const customBanners = [
     {
-      pdfLink: "pdf/carta_geo_23.pdf",
+      pdfLink: "documents/pdf/carta_geo_23.pdf",
       imageSrc: "images/banner_carta.png",
       altText: "Carta geográfica"
     },
