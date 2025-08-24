@@ -66,3 +66,28 @@
     height: 95%;
   }
 }
+.map-viewer-header h3 {
+  margin: 0;
+  color: #333;
+  font-size: 1.2rem;
+  font-weight: 600;
+  max-width: 80%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* Para pantallas pequeñas */
+@media (max-width: 768px) {
+  .map-viewer-header h3 {
+    font-size: 1rem;
+    max-width: 70%;
+  }
+}
+
+@media (max-width: 480px) {
+  .map-viewer-header h3 {
+    font-size: 0.9rem;
+    max-width: 60%;
+  }
+}

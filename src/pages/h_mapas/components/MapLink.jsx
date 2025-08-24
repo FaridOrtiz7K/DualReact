@@ -3,7 +3,7 @@ import React from 'react';
 const MapLink = ({ path, name, onMapClick }) => {
   const handleClick = (e) => {
     e.preventDefault();
-    onMapClick(path);
+    onMapClick(path, name);
   };
 
   return (

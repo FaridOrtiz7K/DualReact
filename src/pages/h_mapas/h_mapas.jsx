@@ -6,7 +6,7 @@ import './components/style.css'
 import productosImage from '/images/cel_map2.jpg';
 
 const HidalgoMapsPage = () => {
-  const [selectedMap, setSelectedMap] = useState(null);
+  const [selectedMap, setSelectedMap] = useState({ path: null, name: null });
   const [isMapViewerOpen, setIsMapViewerOpen] = useState(false);
 
   const bannerData = {
@@ -15,16 +15,16 @@ const HidalgoMapsPage = () => {
     imagenFondo: productosImage 
   };
 
-  const handleMapClick = (mapPath) => {
+  const handleMapClick = (mapPath, mapName) => {
     // Asegurar que la ruta sea absoluta desde public/
     const fullPath = mapPath.startsWith('/') ? mapPath : `/${mapPath}`;
-    setSelectedMap(fullPath);
+    setSelectedMap({ path: fullPath, name: mapName });
     setIsMapViewerOpen(true);
   };
 
   const handleCloseMapViewer = () => {
     setIsMapViewerOpen(false);
-    setSelectedMap(null);
+    setSelectedMap({ path: null, name: null });
   };
 
   const accordionData = [
@@ -134,9 +134,11 @@ const HidalgoMapsPage = () => {
       <MapViewer
         isOpen={isMapViewerOpen}
         onClose={handleCloseMapViewer}
-        mapPath={selectedMap}
+        mapPath={selectedMap.path}
+        mapName={selectedMap.name}
       />
     </div>
   );
 };
+
 export default HidalgoMapsPage;
