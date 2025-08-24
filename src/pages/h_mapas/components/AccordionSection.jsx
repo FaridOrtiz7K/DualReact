@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import MapLink from './MapLink';
 
-const AccordionSection = ({ id, collapseId, title, icon, items, defaultOpen = false }) => {
+const AccordionSection = ({ id, collapseId, title, icon, items, defaultOpen = false, onMapClick }) => {
   const [isOpen, setIsOpen] = useState(defaultOpen);
 
   return (
@@ -26,7 +26,12 @@ const AccordionSection = ({ id, collapseId, title, icon, items, defaultOpen = fa
       >
         <div className="list-group original-list-group">
           {items.map((item, index) => (
-            <MapLink key={index} path={item.path} name={item.name} />
+            <MapLink 
+              key={index} 
+              path={item.path} 
+              name={item.name} 
+              onMapClick={onMapClick}
+            />
           ))}
         </div>
       </div>
