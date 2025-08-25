@@ -1,0 +1,24 @@
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+   
+</head>
+<body>
+    <div class="container">
+        <h1>Índice de complejidad económica a nivel de Localidad y Municipio en Hidalgo</h1>
+        <h2>Usando datos de DENUE 2024</h2>
+        <p>El índice de complejidad económica es una medida
+             utilizada para analizar la diversidad y la sofisticación de las
+              actividades económicas de una región. Este estudio se enfoca
+               en el estado de Hidalgo y utiliza datos del Directorio Estadístico
+                Nacional de Unidades Económicas (DENUE) del año 2024 para evaluar el
+                 nivel de complejidad económica a nivel de localidad y municipio.</p>
+        <div id="map">
+            <script src="datos/geojsons/municipal.js"></script>
+            <script src="datos\geojsons\indice_complejidad_localidad_c_nombre.js"></script>
+            <script src="App.js"></script>
+        </div>
+    </div>
+</body>
