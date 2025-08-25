@@ -16,17 +16,17 @@ const MapSelector = () => {
         {
           id: 'map1-1',
           name: 'Pueblos indígenas migrantes',
-          path: '../../pdf/visualizador_mapas/1demografia/PUEBLOS INDIGENAS MIGRANTES.pdf'
+          path: 'documents/pdf/pdf/visualizador_mapas/1demografia/PUEBLOS INDIGENAS MIGRANTES.pdf'
         },
         {
           id: 'map1-2',
           name: 'Rezago en el municipio de Metepec',
-          path: '../../pdf/visualizador_mapas/1demografia/REZAGO EN EL MUNICIPIO DE METEPEC.pdf'
+          path: 'documents/pdf/pdf/visualizador_mapas/1demografia/REZAGO EN EL MUNICIPIO DE METEPEC.pdf'
         },
         {
           id: 'map1-3',
           name: 'Proyectos infraestructura demográfica lengua indígena',
-          path: '../../pdf/visualizador_mapas/1demografia/PROYECTOS INF_DEMOGRAFICA LENGUA INDIGENA.pdf'
+          path: 'documents/pdf/pdf/visualizador_mapas/1demografia/PROYECTOS INF_DEMOGRAFICA LENGUA INDIGENA.pdf'
         }
       ]
     },
@@ -37,12 +37,12 @@ const MapSelector = () => {
         {
           id: 'map2-1',
           name: 'Plantas energía solar Hgo',
-          path: '../../pdf/visualizador_mapas/2energia/Plantas_Energia_Solar_Hgo.pdf'
+          path: 'documents/pdf/pdf/visualizador_mapas/2energia/Plantas_Energia_Solar_Hgo.pdf'
         },
         {
           id: 'map2-2',
           name: 'Centro cultural Ferrocarril',
-          path: '../../pdf/visualizador_mapas/2energia/Centro cultural Ferrocarril y estación Ferrosur.pdf'
+          path: 'documents/pdf/pdf/visualizador_mapas/2energia/Centro cultural Ferrocarril y estación Ferrosur.pdf'
         }
       ]
     },
@@ -53,17 +53,17 @@ const MapSelector = () => {
         {
           id: 'map3-1',
           name: 'Parques industriales',
-          path: '../../pdf/visualizador_mapas/3industria/Parques Industriales.pdf'
+          path: 'documents/pdf/pdf/visualizador_mapas/3industria/Parques Industriales.pdf'
         },
         {
           id: 'map3-2',
           name: 'Proyecto Santa Clara',
-          path: '../../pdf/visualizador_mapas/3industria/Proyecto Santa Clara.pdf'
+          path: 'documents/pdf/pdf/visualizador_mapas/3industria/Proyecto Santa Clara.pdf'
         },
         {
           id: 'map3-3',
           name: 'Industrias en Actopan',
-          path: '../../pdf/visualizador_mapas/3industria/Industrias en actopan.PNG'
+          path: 'documents/pdf/pdf/visualizador_mapas/3industria/Industrias en actopan.PNG'
         }
       ]
     },
@@ -74,27 +74,27 @@ const MapSelector = () => {
         {
           id: 'map4-1',
           name: 'Proyectos infraestructura hidráulica',
-          path: '../../pdf/visualizador_mapas/4infraestructura/PROYECTOS COL_PACHUCA INFRA_HIDRAULICA v2.pdf'
+          path: 'documents/pdf/pdf/visualizador_mapas/4infraestructura/PROYECTOS COL_PACHUCA INFRA_HIDRAULICA v2.pdf'
         },
         {
           id: 'map4-2',
           name: 'Proyectos PTARs',
-          path: '../../pdf/visualizador_mapas/4infraestructura/PROYECTOS PTARs.pdf'
+          path: 'documents/pdf/pdf/visualizador_mapas/4infraestructura/PROYECTOS PTARs.pdf'
         },
         {
           id: 'map4-3',
           name: 'Infraestructura ferroviaria',
-          path: '../../pdf/visualizador_mapas/4infraestructura/Infraestructura Ferroviaria.pdf'
+          path: 'documents/pdf/pdf/visualizador_mapas/4infraestructura/Infraestructura Ferroviaria.pdf'
         },
         {
           id: 'map4-4',
           name: 'Red vial',
-          path: '../../pdf/visualizador_mapas/4infraestructura/Red_vial.pdf'
+          path: 'documents/pdf/pdf/visualizador_mapas/4infraestructura/Red_vial.pdf'
         },
         {
           id: 'map4-5',
           name: 'Hospitales de Metepec',
-          path: '../../pdf/visualizador_mapas/4infraestructura/Hospitales de Metepec.pdf'
+          path: 'documents/pdf/pdf/visualizador_mapas/4infraestructura/Hospitales de Metepec.pdf'
         }
       ]
     },
@@ -105,22 +105,22 @@ const MapSelector = () => {
         {
           id: 'map5-1',
           name: 'Precipitación',
-          path: '../../pdf/visualizador_mapas/5medio_fisico_natural/Precipitacion.pdf'
+          path: 'documents/pdf/pdf/visualizador_mapas/5medio_fisico_natural/Precipitacion.pdf'
         },
         {
           id: 'map5-2',
           name: 'Temperatura',
-          path: '../../pdf/visualizador_mapas/5medio_fisico_natural/Temperatura.pdf'
+          path: 'documents/pdf/pdf/visualizador_mapas/5medio_fisico_natural/Temperatura.pdf'
         },
         {
           id: 'map5-3',
           name: 'Modelo digital de elevación',
-          path: '../../pdf/visualizador_mapas/5medio_fisico_natural/Modelo digital de elevación del Estado de Hidalgo.pdf'
+          path: 'documents/pdf/pdf/visualizador_mapas/5medio_fisico_natural/Modelo digital de elevación del Estado de Hidalgo.pdf'
         },
         {
           id: 'map5-4',
           name: 'Uso de suelo en Metepec',
-          path: '../../pdf/visualizador_mapas/5medio_fisico_natural/Uso de suelo en Metepec.pdf'
+          path: 'documents/pdf/pdf/visualizador_mapas/5medio_fisico_natural/Uso de suelo en Metepec.pdf'
         }
       ]
     },
@@ -131,17 +131,17 @@ const MapSelector = () => {
         {
           id: 'map6-1',
           name: 'Regionalización',
-          path: '../../pdf/visualizador_mapas/6limites_administrativos/Regionalizacion.pdf'
+          path: 'documents/pdf/pdf/visualizador_mapas/6limites_administrativos/Regionalizacion.pdf'
         },
         {
           id: 'map6-2',
           name: 'Distritos electorales',
-          path: '../../pdf/visualizador_mapas/6limites_administrativos/Distritos electorales.pdf'
+          path: 'documents/pdf/pdf/visualizador_mapas/6limites_administrativos/Distritos electorales.pdf'
         },
         {
           id: 'map6-3',
           name: 'Macroregiones y microregiones',
-          path: '../../pdf/visualizador_mapas/6limites_administrativos/Macroregiones y microregiones.pdf'
+          path: 'documents/pdf/pdf/visualizador_mapas/6limites_administrativos/Macroregiones y microregiones.pdf'
         }
       ]
     },
@@ -152,12 +152,12 @@ const MapSelector = () => {
         {
           id: 'map7-1',
           name: 'Zonas prioritarias',
-          path: '../../pdf/visualizador_mapas/7desarrollo_social/Zonas Prioritarias.pdf'
+          path: 'documents/pdf/pdf/visualizador_mapas/7desarrollo_social/Zonas Prioritarias.pdf'
         },
         {
           id: 'map7-2',
           name: 'Producción de Café',
-          path: '../../pdf/visualizador_mapas/7desarrollo_social/Producción de Café.pdf'
+          path: 'documents/pdf/pdf/visualizador_mapas/7desarrollo_social/Producción de Café.pdf'
         }
       ]
     }

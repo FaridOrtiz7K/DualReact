@@ -1,8 +1,9 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
+import php from 'vite-plugin-php'
 
 export default defineConfig({
-  plugins: [react()],
+  plugins: [react(), php()],
   server: {
     port: 3000,
   },

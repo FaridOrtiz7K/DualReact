@@ -504,9 +504,5 @@ $(document).ready(function () {
   })();
 </script>
 
-<!--footer inicio brian--> 
-<?php
-include 'footer_tab.php';
-?>
 </body>
 </html>
