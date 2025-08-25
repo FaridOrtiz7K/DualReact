@@ -15,6 +15,8 @@ import Mantenimineto from '../src/pages/MaintenancePage';
 import Rellenos from './pages/rellenos/rellenos';
 import Complejidad from './pages/complejidad/complejidad';
 import Alimentario from '../src/pages/alimentario/alimentario'
+import Tablero from '../src/pages/tablero_indicadores/tablero_indicadores'
+
 
 
 //import Alimentario from '../src/pages/priodidadAlimentaria/alimentario'
@@ -42,6 +44,7 @@ const App = () => {
           <Route path='/rellenos' element={<Rellenos/>}/>
           <Route path='/complejidad' element={<Complejidad/>}/>
           <Route path='/alimentario' element={<Alimentario/>}/>
+          <Route path='/tablero' element={<Tablero/>}/>
 
          { /*<Route path="/alimentario" element={<Alimentario />} />
           <Route path="/rellenos" element={<Rellenos />} />*/}
