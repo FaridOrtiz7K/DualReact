@@ -1,21 +1,16 @@
-const MapLink = ({ path, name }) => {
-  const openPopup = (e) => {
+import React from 'react';
+
+const MapLink = ({ path, name, onMapClick }) => {
+  const handleClick = (e) => {
     e.preventDefault();
-    const width = 800;
-    const height = 600;
-    const left = (window.innerWidth - width) / 2;
-    const top = (window.innerHeight - height) / 2;
-    
-    window.open(path, '_blank', 
-      `width=${width},height=${height},left=${left},top=${top}`
-    );
+    onMapClick(path, name);
   };
 
   return (
     <a 
       href={path} 
       className="list-group-item list-group-item-action original-map-link" 
-      onClick={openPopup}
+      onClick={handleClick}
     >
       {name}
     </a>

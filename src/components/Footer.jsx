@@ -15,12 +15,12 @@ const Footer = () => {
               <h3 className="social-title">Social</h3>
               <ul className="list-unstyled social">
                 <li>
-                  <a href="#">
+                  <a href="https://www.facebook.com/profile.php?id=100069229599131">
                     <span className="icon-facebook"></span>
                   </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a href="https://twitter.com/gobiernohidalgo?s=20">
                     <span className="icon-twitter"></span>
                   </a>
                 </li>

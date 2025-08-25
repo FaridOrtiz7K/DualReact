@@ -1,8 +1,15 @@
 
 import './components/style_info_met.css';
 import bannerImage from '/images/infografia_metro.png';
+import Banner_P from '../../components/Banner_P'; 
+
 
 const InfografiasMetro = () => {
+  const bannerData = {
+        titulo: "Infografías Metropolitanas",
+        subtitulo: "",
+         imagenFondo: bannerImage 
+      };
   const zonasMetropolitanas = [
     {
       nombre: "ZONA METROPOLITANA DE PACHUCA",
@@ -25,20 +32,7 @@ const InfografiasMetro = () => {
     <>
       
       {/* Banner Hero */}
-      <div 
-        className="hero-banner" 
-        style={{ 
-          background: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${bannerImage}) no-repeat center`,
-          backgroundSize: 'cover'
-        }}
-      >
-        
-        <div className="container">
-          <div className="hero-content">
-            <h1>Infografías Metropolitanas</h1>
-          </div>
-        </div>
-      </div>
+     <Banner_P {...bannerData} />
 
       {/* Contenido Principal */}
       <main className="main-content">
@@ -51,7 +45,7 @@ const InfografiasMetro = () => {
                 style={{ borderLeft: `5px solid ${zona.color}` }}
               >
                 <a 
-                  href={`/metropolitanas/${zona.archivo}`} 
+                  href={`./documents/infografias/metropolitanas/${zona.archivo}`} 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="zona-link"

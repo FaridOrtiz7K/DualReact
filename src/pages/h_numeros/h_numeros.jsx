@@ -5,8 +5,8 @@ import productosImage from '/images/tableros.jpg';
 
 const NumbersPage = () => {
   const bannerData = {
-    title: "Hidalgo en Números",
-    subtitle: "Información relevante y sintetizada en tableros dinámicos e infografías por municipio",
+    titulo: "Hidalgo en Números",
+    subtitulo: "Información relevante y sintetizada en tableros dinámicos e infografías por municipio",
      imagenFondo: productosImage 
   };
 

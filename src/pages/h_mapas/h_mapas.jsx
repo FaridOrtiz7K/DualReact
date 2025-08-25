@@ -1,9 +1,13 @@
+import React, { useState } from 'react';
 import Banner from '../../components/Banner_P';
 import AccordionSection from './components/AccordionSection';
+import MapViewer from '../../components/common/MapViewer';
 import './components/style.css'
 import productosImage from '/images/cel_map2.jpg';
 
 const HidalgoMapsPage = () => {
+  const [selectedMap, setSelectedMap] = useState({ path: null, name: null });
+  const [isMapViewerOpen, setIsMapViewerOpen] = useState(false);
 
   const bannerData = {
     titulo: "Hidalgo en Mapas",
@@ -11,7 +15,19 @@ const HidalgoMapsPage = () => {
     imagenFondo: productosImage 
   };
 
-   const accordionData = [
+  const handleMapClick = (mapPath, mapName) => {
+    // Asegurar que la ruta sea absoluta desde public/
+    const fullPath = mapPath.startsWith('/') ? mapPath : `/${mapPath}`;
+    setSelectedMap({ path: fullPath, name: mapName });
+    setIsMapViewerOpen(true);
+  };
+
+  const handleCloseMapViewer = () => {
+    setIsMapViewerOpen(false);
+    setSelectedMap({ path: null, name: null });
+  };
+
+  const accordionData = [
     {
       id: "headingOne",
       title: "Recreación, Gastronomía y Turismo",
@@ -89,7 +105,7 @@ const HidalgoMapsPage = () => {
       ]
     }
   ];
-return (
+  return (
     <div className="hidalgo-maps-container">
       <Banner {...bannerData} />
       
@@ -102,6 +118,7 @@ return (
                 id={`heading${index + 1}`}
                 collapseId={`collapse${index + 1}`}
                 {...section}
+                onMapClick={handleMapClick}
               />
             ))}
           </div>
@@ -112,8 +129,16 @@ return (
           </div>
         </div>
       </section>
-      
+
+      {/* Modal con iframe */}
+      <MapViewer
+        isOpen={isMapViewerOpen}
+        onClose={handleCloseMapViewer}
+        mapPath={selectedMap.path}
+        mapName={selectedMap.name}
+      />
     </div>
   );
 };
+
 export default HidalgoMapsPage;
