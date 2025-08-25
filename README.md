@@ -12,7 +12,8 @@
  ← Código fuente de React
  ← Dependencias y scripts de ejecución
  vite.config.js  ← Configuración de Vite
- ```--
+ ```
+ --
 ##  Requisitos Previos- Node.js (v14 o superior)- npm o yarn- PHP (v7.4 o superior)- Extensiones PHP necesarias (p. ej. `mysqli`, `PDO`, según tu backend)--
 ##  Instalación y Ejecución
  ### 1. Clona el repositorio
