@@ -1,5 +1,6 @@
 # DualReact
- ¡Bienvenido(a) a **DualReact**! Proyecto de la página SIGEH, dividido en frontend con React/Vite y backend en PHP.--
+ ¡Bienvenido(a) a **DualReact**! Proyecto de la página SIGEH, dividido en frontend con React/Vite y backend en PHP.
+ --
 ##  Arquitectura del Proyecto- **Frontend**: React ejecutándose en Vite, puerto **3000**.- **Backend (PHP)**: Carpeta `php/`, requiere servidor PHP, puerto **8080**.
  ```
  DualReact/
@@ -14,7 +15,8 @@
  vite.config.js  ← Configuración de Vite
  ```
  --
-##  Requisitos Previos- Node.js (v14 o superior)- npm o yarn- PHP (v7.4 o superior)- Extensiones PHP necesarias (p. ej. `mysqli`, `PDO`, según tu backend)--
+##  Requisitos Previos- Node.js (v14 o superior)- npm o yarn- PHP (v7.4 o superior)- Extensiones PHP necesarias (p. ej. `mysqli`, `PDO`, según tu backend)
+--
 ##  Instalación y Ejecución
  ### 1. Clona el repositorio
  ```bash
