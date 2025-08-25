@@ -1,7 +1,9 @@
 # DualReact
- ¡Bienvenido(a) a **DualReact**! Proyecto de la página SIGEH, dividido en frontend con React/Vite y backend en PHP.
+ Proyecto de la página SIGEH, dividido en frontend con React/Vite y backend en PHP.
  --
-##  Arquitectura del Proyecto- **Frontend**: React ejecutándose en Vite, puerto **3000**.- **Backend (PHP)**: Carpeta `php/`, requiere servidor PHP, puerto **8080**.
+##  Arquitectura del Proyecto
+- **Frontend**: React ejecutándose en Vite, puerto **3000**.
+- **Backend (PHP)**: Carpeta `php/`, requiere servidor PHP, puerto **8080**.
  ```
  DualReact/
  php/            
@@ -14,9 +16,10 @@
  ← Dependencias y scripts de ejecución
  vite.config.js  ← Configuración de Vite
  ```
- --
-##  Requisitos Previos- Node.js (v14 o superior)- npm o yarn- PHP (v7.4 o superior)- Extensiones PHP necesarias (p. ej. `mysqli`, `PDO`, según tu backend)
---
+##  Requisitos Previos
+- Node.js (v14 o superior)
+- npm o yarn- PHP (v7.4 o superior)
+
 ##  Instalación y Ejecución
  ### 1. Clona el repositorio
  ```bash
@@ -71,7 +74,10 @@
  2. Aloja los archivos generados (generalmente en `dist/` o según configuración de Vite) en un servidor web.
  3. Inicia el servidor PHP de tu carpeta `php/` en el entorno de producción (puerto configurable según servidor real, si no es localhost:8080).--
 
-##  Notas- Asegúrate que las URLs o rutas usadas en el frontend estén apuntando correctamente al backend (`http://localhost:8080`).- Revisa que no haya conflictos de CORS entre frontend y backend.--
+##  Notas
+- Asegúrate que las URLs o rutas usadas en el frontend estén apuntando correctamente al backend (`http://localhost:8080`).
+- Revisa que no haya conflictos de CORS entre frontend y backend.
+
 ###  Resumen Rápido
  | Componente        | Comando / Acción                          | Puertos             |
  |------------------|-------------------------------------------|---------------------|
