@@ -24,7 +24,7 @@ const Home = () => {
        title: "Monitoreo de indicadores nacionales",
       description: "Tableros donde se muestra la posición de Hidalgo con respecto a indicadores nacionales",
       imageUrl: "./images/sec/3.png",
-      linkUrl: "/mantenimiento"
+      linkUrl: "/tablero"
     },
     {
       title: "Atlas interactivo del estado de Hidalgo",
