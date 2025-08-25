@@ -53,9 +53,10 @@
     "serve": "vite preview"
   }
  }
- ```- `npm run dev`: Inicia el servidor de desarrollo.
-    - `npm run build`: Crea la versión de producción del frontend.
-    - `npm run serve`: Vista previa local de la versión ya compilada.--
+ ```
+- `npm run dev`: Inicia el servidor de desarrollo.
+- `npm run build`: Crea la versión de producción del frontend.
+- `npm run serve`: Vista previa local de la versión ya compilada.--
 
 ##  Eslint y Configuración Adicional
  El proyecto incluye `eslint.config.js` para mantener consistencia en el código. Se recomienda:- Instalar extensiones de ESLint en tu editor (VS Code, Atom, etc.)- Ejecutar `npm run lint` si añades ese comando, o bien usar ESLint desde el editor.--
