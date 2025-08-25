@@ -14,6 +14,8 @@ import InfoMet from '../src/pages/h_numeros/info_met'
 import Mantenimineto from '../src/pages/MaintenancePage';
 import Rellenos from './pages/rellenos/rellenos';
 import Complejidad from './pages/complejidad/complejidad';
+import Alimentario from '../src/pages/alimentario/alimentario'
+
 
 //import Alimentario from '../src/pages/priodidadAlimentaria/alimentario'
 import Info_reg from '../src/pages/h_numeros/InfografiasRegionales'
@@ -39,6 +41,7 @@ const App = () => {
           <Route path='/mantenimiento' element={<Mantenimineto/>}/>
           <Route path='/rellenos' element={<Rellenos/>}/>
           <Route path='/complejidad' element={<Complejidad/>}/>
+          <Route path='/alimentario' element={<Alimentario/>}/>
 
          { /*<Route path="/alimentario" element={<Alimentario />} />
           <Route path="/rellenos" element={<Rellenos />} />*/}
