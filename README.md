@@ -67,10 +67,7 @@
     ```
  2. Aloja los archivos generados (generalmente en `dist/` o según configuración de Vite) en un servidor web.
  3. Inicia el servidor PHP de tu carpeta `php/` en el entorno de producción (puerto configurable según servidor real, si no es localhost:8080).--
-##  Soporte y Contacto
- ¿Tienes dudas o necesitas ayuda?- Abre una **Issue** en el repositorio.- Contacta al desarrollador: **FaridOrtiz7K**.--
-##  Licencia
- _(Si aún no especificaste una, te sugerimos añadir una aquí, como MIT, GPL, etc.)_--
+
 ##  Notas- Asegúrate que las URLs o rutas usadas en el frontend estén apuntando correctamente al backend (`http://localhost:8080`).- Revisa que no haya conflictos de CORS entre frontend y backend.--
 ###  Resumen Rápido
  | Componente        | Comando / Acción                          | Puertos             |
@@ -79,3 +76,5 @@
  | Backend (PHP)    | `php -S localhost:8080`                   | 8080                |
  | Build Frontend   | `npm run build`                           |                     |
  | Visualización    | `http://localhost:3000` / `http://localhost:8080` |             |--
+
+## Desarrollado por FaridOrtiz7K y m3tzly
