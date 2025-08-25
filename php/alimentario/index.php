@@ -1,6 +1,4 @@
-<?php
-include 'header_tab.php';
-?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -5262,14 +5260,36 @@ function asArray(value) {
 <section>
   <!-- BANNER -->
 
-<div class="site-cover2 site-cover2-sm same-height overlay single-page" style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('#'), no-repeat center; background-size: cover; cursor: default;">
+<div class="site-cover2 site-cover2-sm same-height overlay single-page" style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('#'), no-repeat center; background-size: cover; cursor: default; vertical-align: top;">
 	<div class="container">
-	  <div class="row same-height justify-content-center">
+	  <div class="row same-height justify-content-center" style = "vertical-align: top;">
 		<div class="col-md-12">
-		  <div class="post-entry text-center">
-			<div class="text" style="padding-top: 60px;">
-			<h2>Índice Prioridad Alimentaria</h2>
-        
+		  <div class="post-entry text-center" style = "vertical-align: top;">
+			<div class="text" style="padding-top: 50px; text-align: center; vertical-align: top;">
+			<h2 style = "color: white; font-family: Helvetica; ">Índice Prioridad Alimentaria</h2>
+        .post-entry.text-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #3498db, #2c3e50);
+    padding: 60px 20px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.post-entry.text-center::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0) 60%);
+    transform: rotate(30deg);
+}
         <p></p>
 			</div>
 		  </div>
@@ -5277,7 +5297,7 @@ function asArray(value) {
 	  </div>
 	</div>
   </div>
-  <div id="htmlwidget_container" style="padding-top: 180px;">
+  <div id="htmlwidget_container" style="padding-top: 100px;">
     <div class="leaflet html-widget html-fill-item" id="htmlwidget-7ddac3ba4d5f64281ad7" style="width:100%;height:400px; "></div>
         
             
