@@ -53,7 +53,7 @@ const Home = () => {
       altText: "Carta geográfica"
     },
     {
-      pdfLink: "pdf/Lineamientos_PED.pdf",
+      pdfLink: "documents/pdf/Lineamientos_PED.pdf",
       imageSrc: "images/banner_lineamientos.png",
       altText: "Lineamientos PED"
     }
